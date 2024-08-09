@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&family=Rubik:wght@300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="head-container container">
+            <nav class="head-nav">
+                <a href="#" class="head-logo">
+                    <svg width="41" height="41" class="head-logo-icon">
+                        <use href="./images/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                    Travellian
+                </a>
+                <ul class="head-nav-list">
+                    <li class="head-nav-list-item">
+                        <a href="#" class="head-nav-list-link">Home</a>
+                    </li>
+                    <li class="head-nav-list-item">
+                        <a href="#" class="head-nav-list-link">Explore</a>
+                    </li>
+                    <li class="head-nav-list-item">
+                        <a href="#" class="head-nav-list-link">Travel</a>
+                    </li>
+                    <li class="head-nav-list-item">
+                        <a href="#" class="head-nav-list-link">Blog</a>
+                    </li>
+                    <li class="head-nav-list-item">
+                        <a href="#" class="head-nav-list-link">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="head-btns-wrap">
+                <li>
+                    <button type="button" class="head-btns btn-log">Login</button>
+                </li>
+                <li>
+                    <button type="button" class="head-btns btn-up">Sign up</button>
+                </li>
+            </ul>
+            <button class="mob-menu-btn" type="button">
+                <svg width="50" height="50" class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu" data-menu>
+            <button type="button" class="mob-close-btn" data-menu-close>
+                <svg class="mob-close-icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="mob-menu-top">
+                <nav class="mob-menu-nav">
+                    <ul class="mob-navigation">
+                        <li class="mob-nav-list-item">
+                            <a href="#" class="mob-nav-list-link">Home</a>
+                        </li>
+                        <li class="head-nav-list-item">
+                            <a href="#" class="mob-nav-list-link">Explore</a>
+                        </li>
+                        <li class="head-nav-list-item">
+                            <a href="#" class="mob-nav-list-link">Travel</a>
+                        </li>
+                        <li class="head-nav-list-item">
+                            <a href="#" class="mob-nav-list-link">Blog</a>
+                        </li>
+                        <li class="head-nav-list-item">
+                            <a href="#" class="mob-nav-list-link">Pricing</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mob-menu-bottom">
+                <ul class="mob-btns-wrap">
+                    <li>
+                        <button type="button" class="mob-btns btn-log">Login</button>
+                    </li>
+                    <li>
+                        <button type="button" class="mob-btns btn-up">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section section">
+            <div class="hero-container container">
+                <div class="hero-head">
+                    <h1 class="hero-title">Start your unforgettable
+                        journey with us.</h1>
+                    <p class="hero-text">The best travel for your jouney begins now</p>
+                </div>
+                <div class="hero-book">
+                    <form class="hero-form">
+                        <div class="hero-form-field">
+                            <label for="destination" class="hero-field-label">Destination</label>
+                            <input type="text" name="destination" id="destination" class="hero-input">
+                        </div>
+                        <div class="hero-form-field">
+                            <label for="person" class="hero-field-label">Person</label>
+                            <select name="person" id="person" class="hero-input">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="hero-form-field">
+                            <label for="chekin" class="hero-field-label">Check in</label>
+                            <input type="date" name="chek-in" id="chek-in" class="hero-input" value="2024-08-09">
+                        </div>
+                        <div class="hero-form-field">
+                            <label for="" class="hero-field-label">Check out</label>
+                            <input type="date" name="chek-out" id="chek-out" class="hero-input" value="2024-08-09">
+                        </div>
+                    </form>
+                    <div class="hero-btn-wrap">
+                        <button type="submit" class="hero-btn">
+                            Book Now
+                            <svg width="21" height="10" class="hero-btn-icon">
+                                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-section section">
+            <div class="popular-container container">
+                <div class="popular-head">
+                    <h2 class="popular-title">Popular Destinations</h2>
+                    <p class="popular-text">Most popular destinations around the world, from historical places to
+                        natural wonders.</p>
+                </div>
+                <div class="popular-list-wrap">
+                    <ul class="popular-list">
+                        <li class="popular-list-item">
+                            <h3 class="popular-item-title">Monument of Berlin</h3>
+                            <div class="popular-item-text-wrap">
+                                <svg width="24" height="24" class="popular-item-icon">
+                                    <use href="./images/symbol-defs.svg#icon-location"></use>
+                                </svg>
+                                <p class="popular-item-text">Berlin, Germany</p>
+                            </div>
+                        </li>
+                        <li class="popular-list-item">
+                            <h3 class="popular-item-title">Millennium Bridge</h3>
+                            <div class="popular-item-text-wrap">
+                                <svg width="24" height="24" class="popular-item-icon">
+                                    <use href="./images/symbol-defs.svg#icon-location"></use>
+                                </svg>
+                                <p class="popular-item-text">London, United Kingdom</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="offer-section section">
+            <div class="offer-container container">
+                <div class="offer-head">
+                    <h2 class="offer-title">Special Offer</h2>
+                    <p class="offer-text">Check out our special offer and discounts</p>
+                </div>
+                <div class="offer-list-wrap">
+                    <ul class="offer-list">
+                        <li class="offer-list-item">
+                            <picture>
+                                <source srcset="./images/lisbon-desk-1440.jpg" media="(min-width:1440px)">
+                                <source srcset="./images/lisbon-desk-1152.jpg" media="(min-width:1152px)">
+                                <source srcset="./images/lisbon-tab.jpg" media="(min-width:768px)">
+                                <source srcset="./images/lisbon-mob.jpg" media="(max-width:768px)">
+                                <img src="./images/lisbon-mob.jpg" alt="Lisbon">
+                            </picture>
+                            <div class="offer-item-text-wrap">
+                                <h3 class="offer-item-title">Lisbon, Portugal</h3>
+                                <p class="offer-item-text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+                                    included. Very popular
+                                    during the renaissance. Passage and going through the cites of the world in
+                                    classical literature.</p>
+                                <div class="offer-item-price-wrap">
+                                    <p class="offer-item-price">From<span>€500</span></p>
+                                    <button type="button" class="offer-item-btn">Details</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offer-list-item">
+                            <picture>
+                                <source srcset="./images/athens-desk-1440.jpg" media="(min-width:1440px)">
+                                <source srcset="./images/athens-desk-1152.jpg" media="(min-width:1152px)">
+                                <source srcset="./images/athens-tab.jpg" media="(min-width:768px)">
+                                <source srcset="./images/athens-mob.jpg" media="(max-width:768px)">
+                                <img src="./images/athens-mob.jpg" alt="Athens">
+                            </picture>
+                            <div class="offer-item-text-wrap">
+                                <h3 class="offer-item-title">Athens, Greece</h3>
+                                <p class="offer-item-text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+                                    included. Very popular
+                                    during the renaissance. Passage and going through the cites of the world in
+                                    classical literature.</p>
+                                <div class="offer-item-price-wrap">
+                                    <p class="offer-item-price">From<span>€800</span></p>
+                                    <button type="button" class="offer-item-btn">Details</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offer-list-item">
+                            <picture>
+                                <source srcset="./images/rome-desk-1440.jpg" media="(min-width:1440px)">
+                                <source srcset="./images/rome-desk-1152.jpg" media="(min-width:1152px)">
+                                <source srcset="./images/rome-tab.jpg" media="(min-width:768px)">
+                                <source srcset="./images/rome-mob.jpg" media="(max-width:768px)">
+                                <img src="./images/rome-mob.jpg" alt="Rome">
+                            </picture>
+                            <div class="offer-item-text-wrap">
+                                <h3 class="offer-item-title">Rome, Italy</h3>
+                                <p class="offer-item-text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+                                    included. Very popular
+                                    during the renaissance. Passage and going through the cites of the world in
+                                    classical literature.</p>
+                                <div class="offer-item-price-wrap">
+                                    <p class="offer-item-price">From<span>€750</span></p>
+                                    <button type="button" class="offer-item-btn">Details</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="blog-section section">
+            <div class="blog-container container">
+                <div class="blog-head">
+                    <h2 class="blog-title">Our Blog</h2>
+                    <p class="blog-text">An insight the incredible experience in the world</p>
+                </div>
+                <div class="blog-content">
+                    <picture>
+                        <source srcset="./images/blog-desk-1440.jpg" media="(min-width:1440px)">
+                        <source srcset="./images/blog-desk-1152.jpg" media="(min-width:1152px)">
+                        <source srcset="./images/blog-tab.jpg" media="(min-width:768px)">
+                        <source srcset="./images/blog-mob.jpg" media="(max-width:768px)">
+                        <img src="./images/blog-mob.jpg" alt="Sea">
+                    </picture>
+                    <div class="blog-content-wrap">
+                        <h3 class="blog-content-title">Beautiful Italy
+                            Let&apos;s travel</h3>
+                        <p class="blog-content-text">But I must explain to you how all this mistaken idea of denouncing
+                            pleasure and praising pain
+                            was born and I will give you a complete account of the system and expound the actual
+                            teachings of the great explorer of the truth, the master- builder of human happiness. No one
+                            rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do
+                            not know how to pursue pleasure rationally encounter consequences that are extremly painful.
+                            Nor again is there anyone who loves or pursues.</p>
+                        <a href="#" class="blog-content-link">
+                            <svg width="21" height="10" class="blog-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                            </svg>
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback-section section">
+            <div class="feedback-container container">
+                <div class="feedback-head">
+                    <h2 class="feedback-title">Traveler&apos;s Experiences</h2>
+                    <p class="feedback-text">Here some awesome feedback from our travelers</p>
+                </div>
+                <div class="feedback-list-wrap">
+                    <ul class="feedback-list">
+                        <li class="feedback-list-item">
+                            <img src="./images/avatar2.jpg" alt="Photo of traveler" class="feedback-item-img" width="40"
+                                height="40">
+                            <p class="feedback-item-text">But I must explain to you how all this mistaken idea of
+                                denouncing pleasure and praising
+                                pain was born and I will give you a complete account of the system and expound the
+                                actual teachings of the great explorer of the truth, the master- builder of human
+                                happiness.</p>
+                            <p class="feedback-item-name">John Doe</p>
+                            <p class="feedback-item-prof">Accountant</p>
+                        </li>
+                        <li class="feedback-list-item">
+                            <img src="./images/avatar1.jpg" alt="Photo of traveler" class="feedback-item-img" width="40"
+                                height="40">
+                            <p class="feedback-item-text">But I must explain to you how all this mistaken idea of
+                                denouncing pleasure and praising
+                                pain was born and I will give you a complete account of the system and expound the
+                                actual teachings of the great explorer of the truth, the master- builder of human
+                                happiness.</p>
+                            <p class="feedback-item-name">John Smith</p>
+                            <p class="feedback-item-prof">Journalist, HWO News</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="letter-section section">
+            <div class="letter-container">
+                <h2 class="letter-title">Our Newsletter</h2>
+                <div class="letter-field">
+                    <label for="email" class="letter-field-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" letter-field-input>
+                </div>
+                <button type="submit" letter-btn>Subscribe</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-container container">
+            <div class="footer-head">
+                <a href="#" class="head-logo">
+                    <svg width="41" height="41" class="head-logo-icon">
+                        <use href="./images/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                    Travellian
+                </a>
+                <p class="footer-text">Copyright &copy; Travellian 2020 All rights reserved</p>
+            </div>
+            <div class="footer-wrap">
+                <h3 class="footer-wrap-title">Menu</h3>
+                <ul class="footer-wrap-list">
+                    <li class="footer-wrap-list-item">
+                        <a href="#" class="footer-wrap-item-link">Home</a>
+                    </li>
+                    <li class="footer-wrap-list-item">
+                        <a href="#" class="footer-wrap-item-link">Explore</a>
+                    </li>
+                    <li class="footer-wrap-list-item">
+                        <a href="#" class="footer-wrap-item-link">Travel</a>
+                    </li>
+                    <li class="footer-wrap-list-item">
+                        <a href="#" class="footer-wrap-item-link">Blog</a>
+                    </li>
+                    <li class="footer-wrap-list-item">
+                        <a href="#" class="footer-wrap-item-link">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <address class="footer-wrap">
+                <h3 class="footer-wrap-title">Contact Info</h3>
+                <ul class="footer-wrap-list">
+                    <li class="footer-wrap-list-item">
+                        <a href="tel:+123456789" class="footer-wrap-item-link">+123 456 789</a>
+                    </li>
+                    <li class="footer-wrap-list-item">
+                        <a href="mailto:info@travellian.com" class="footer-wrap-item-link">info@travellian.com</a>
+                    </li>
+                    <li class="footer-wrap-list-item">
+                        <p class="footer-wrap-item-link">1245, New Yourk, USA</p>
+                    </li>
+                </ul>
+            </address>
+            <div class="footer-wrap">
+                <h3 class="footer-wrap-title">Follow us on</h3>
+                <ul class="footer-wrap-soc-list">
+                    <li class="footer-soc-list-item">
+                        <a href="#" class="footer-soc-list-link">
+                            <svg width="31" height="31" class="footer-soc-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-list-item">
+                        <a href="#" class="footer-soc-list-link">
+                            <svg width="31" height="31" class="footer-soc-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-pinterest"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-list-item">
+                        <a href="#" class="footer-soc-list-link">
+                            <svg width="31" height="31" class="footer-soc-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-list-item">
+                        <a href="#" class="footer-soc-list-link">
+                            <svg width="31" height="31" class="footer-soc-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
