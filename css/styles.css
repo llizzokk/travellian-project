@@ -231,14 +231,33 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .popular-head {
   margin-bottom: 100px;
+  position: relative;
 }
 .popular-title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #172432;
+  margin-bottom: 52px;
+}
+.popular-head::after {
+  position: absolute;
+  top: 115px;
+  left: 0;
+  content: " ";
+  border: 2px solid #ff7757;
+  width: 227px;
+  height: 0px;
 }
 .popular-text {
+  width: 288px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #767e86;
 }
 .popular-list-wrap {
 }
@@ -256,13 +275,28 @@ button {
   height: 320px;
   padding: 207px 20px 40px 20px;
 }
+.popular-list-item:last-child {
+  background-image: url(../images/london-mob.jpg);
+}
 .popular-item-title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 17px;
 }
 .popular-item-text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .popular-item-icon {
+  fill: #fff;
 }
 .popular-item-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
 }
 
 /* media */
