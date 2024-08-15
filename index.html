@@ -33,19 +33,19 @@
                 </a>
                 <ul class="head-nav-list">
                     <li class="head-nav-list-item">
-                        <a href="#" class="head-nav-list-link">Home</a>
+                        <a href="./index.html" class="head-nav-list-link">Home</a>
                     </li>
                     <li class="head-nav-list-item">
-                        <a href="#" class="head-nav-list-link">Explore</a>
+                        <a href="#explore" class="head-nav-list-link">Explore</a>
                     </li>
                     <li class="head-nav-list-item">
-                        <a href="#" class="head-nav-list-link">Travel</a>
+                        <a href="#travel" class="head-nav-list-link">Travel</a>
                     </li>
                     <li class="head-nav-list-item">
-                        <a href="#" class="head-nav-list-link">Blog</a>
+                        <a href="#blog" class="head-nav-list-link">Blog</a>
                     </li>
                     <li class="head-nav-list-item">
-                        <a href="#" class="head-nav-list-link">Pricing</a>
+                        <a href="#feedback" class="head-nav-list-link">Feedback</a>
                     </li>
                 </ul>
             </nav>
@@ -57,15 +57,15 @@
                     <button type="button" class="head-btns btn-up">Sign up</button>
                 </li>
             </ul>
-            <button class="mob-menu-btn" type="button">
+            <button class="mob-menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="50" height="50" class="menu-icon">
                     <use href="./images/symbol-defs.svg#icon-hamburger"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu" data-menu>
-            <button type="button" class="mob-close-btn" data-menu-close>
-                <svg class="mob-close-icon" width="8" height="8">
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+            <button type="button" class="mob-close-btn js-close-menu">
+                <svg class="mob-close-icon" width="24" height="24">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
@@ -73,19 +73,19 @@
                 <nav class="mob-menu-nav">
                     <ul class="mob-navigation">
                         <li class="mob-nav-list-item">
-                            <a href="#" class="mob-nav-list-link">Home</a>
+                            <a href="/index.html" class="mob-nav-list-link">Home</a>
                         </li>
                         <li class="head-nav-list-item">
-                            <a href="#" class="mob-nav-list-link">Explore</a>
+                            <a href="#explore" class="mob-nav-list-link">Explore</a>
                         </li>
                         <li class="head-nav-list-item">
-                            <a href="#" class="mob-nav-list-link">Travel</a>
+                            <a href="#travel" class="mob-nav-list-link">Travel</a>
                         </li>
                         <li class="head-nav-list-item">
-                            <a href="#" class="mob-nav-list-link">Blog</a>
+                            <a href="#blog" class="mob-nav-list-link">Blog</a>
                         </li>
                         <li class="head-nav-list-item">
-                            <a href="#" class="mob-nav-list-link">Pricing</a>
+                            <a href="#feedback" class="mob-nav-list-link">Feedback</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,10 +93,10 @@
             <div class="mob-menu-bottom">
                 <ul class="mob-btns-wrap">
                     <li>
-                        <button type="button" class="mob-btns btn-log">Login</button>
+                        <button type="button" class="mob-btns">Login</button>
                     </li>
                     <li>
-                        <button type="button" class="mob-btns btn-up">Sign up</button>
+                        <button type="button" class="mob-btns">Sign up</button>
                     </li>
                 </ul>
             </div>
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="popular-section section">
+        <section class="popular-section section" id="explore">
             <div class="popular-container container">
                 <div class="popular-head">
                     <h2 class="popular-title">Popular Destinations</h2>
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </section>
-        <section class="offer-section section">
+        <section class="offer-section section" id="travel">
             <div class="offer-container container">
                 <div class="offer-head">
                     <h2 class="offer-title">Special Offer</h2>
@@ -248,7 +248,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog-section section">
+        <section class="blog-section section" id="blog">
             <div class="blog-container container">
                 <div class="blog-head">
                     <h2 class="blog-title">Our Blog</h2>
@@ -282,7 +282,7 @@
                 </div>
             </div>
         </section>
-        <section class="feedback-section section">
+        <section class="feedback-section section" id="feedback">
             <div class="feedback-container container">
                 <div class="feedback-head">
                     <h2 class="feedback-title">Traveler&apos;s Experiences</h2>
@@ -319,19 +319,22 @@
         <section class="letter-section section">
             <div class="letter-container">
                 <h2 class="letter-title">Our Newsletter</h2>
-                <div class="letter-field">
-                    <label for="email" class="letter-field-label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" letter-field-input>
+                <div class="letter-form-wrap">
+                    <div class="letter-field">
+                        <label for="email" class="letter-field-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email"
+                            class="letter-field-input">
+                    </div>
+                    <button type="submit" class="letter-btn">Subscribe</button>
                 </div>
-                <button type="submit" letter-btn>Subscribe</button>
             </div>
         </section>
     </main>
     <footer class="footer-section">
         <div class="footer-container container">
             <div class="footer-head">
-                <a href="#" class="head-logo">
-                    <svg width="41" height="41" class="head-logo-icon">
+                <a href="#" class="foot-logo">
+                    <svg width="41" height="41" class="foot-logo-icon">
                         <use href="./images/symbol-defs.svg#icon-logo"></use>
                     </svg>
                     Travellian
@@ -354,7 +357,7 @@
                         <a href="#" class="footer-wrap-item-link">Blog</a>
                     </li>
                     <li class="footer-wrap-list-item">
-                        <a href="#" class="footer-wrap-item-link">Pricing</a>
+                        <a href="#" class="footer-wrap-item-link">Feedback</a>
                     </li>
                 </ul>
             </div>
@@ -407,6 +410,11 @@
             </div>
         </div>
     </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
