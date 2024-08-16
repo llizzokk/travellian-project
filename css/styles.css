@@ -80,7 +80,7 @@ button {
 }
 .head-nav-list-link {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   padding: 50px 0;
   transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -100,7 +100,7 @@ button {
   text-align: center;
   font-family: inherit;
   padding: 20px 0;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   border: none;
 }
@@ -123,8 +123,8 @@ button {
   background-color: #fca592;
 }
 .mob-menu-btn {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: transparent;
   border: none;
   display: flex;
@@ -598,6 +598,7 @@ button {
   padding: 60px 20px 32px 20px;
 }
 .feedback-item-img {
+  border-radius: 100%;
   width: 100px;
   height: 100px;
   position: absolute;
