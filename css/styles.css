@@ -148,7 +148,7 @@ button {
   position: fixed;
   transform: translateX(0);
   height: 100%;
-  width: 220px;
+  width: 100%;
   background-color: #172432;
   top: 0;
   right: 0;
